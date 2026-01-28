@@ -25,9 +25,10 @@
 
 const Redis = require("ioredis");
 
-const redis = new Redis("redis://red-d5stf3s9c44c739i0110.render.com:6379", {
+const redis = new Redis("red-d5stf3s9c44c739i0110:6379", {
   tls: {} // REQUIRED for Render
-});
+});redis://red-d5stf3s9c44c739i0110:6379
+// redis://red-d5stf3s9c44c739i0110.render.com:6379
 
 redis.on("connect", () => {
   console.log("✅ Redis connected");
