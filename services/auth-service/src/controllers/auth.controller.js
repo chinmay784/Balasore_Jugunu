@@ -26,7 +26,7 @@ exports.verifyOtpAndLogin = async (req, res) => {
 
   // CALL USERS SERVICE
   const userRes = await axios.post(
-    "http://localhost:3002/users/find-or-create",
+    "https://balasore-jugunu-user-services.onrender.com/users/find-or-create",
     { phone, role }
   );
 
