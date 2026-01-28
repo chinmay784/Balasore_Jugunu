@@ -44,7 +44,7 @@
 const Redis = require("ioredis");
 
 const redis = new Redis(
-  "redis://red-d5sttls9c44c739i9qh0:BjyazwodgtOP8a0Mndvu2RrpwAesq17b@red-d5sttls9c44c739i9qh0:6379",
+  "rediss://red-d5sttls9c44c739i9qh0:BjyazwodgtOP8a0Mndvu2RrpwAesq17b@oregon-keyvalue.render.com:6379",
   {
     tls: {
       rejectUnauthorized: false, // REQUIRED on Render
